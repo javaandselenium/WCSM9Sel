@@ -21,12 +21,12 @@ public class Test1 {
 	    
 	    
 	  //  WebElement ele = driver.findElement(By.id("username"));
-	    w.until(ExpectedConditions.visibilityOf(element));
-	    w.until(ExpectedConditions.visibilityOfElementLocated(locator));
-	    w.until(ExpectedConditions.elementToBeClickable(locator));
-	    w.until(ExpectedConditions.elementToBeClickable(element));
-	    w.until(ExpectedConditions.titleContains(title));
-	     
+	 //   w.until(ExpectedConditions.visibilityOf(element));
+//	    w.until(ExpectedConditions.visibilityOfElementLocated(locator));
+//	    w.until(ExpectedConditions.elementToBeClickable(locator));
+//	    w.until(ExpectedConditions.elementToBeClickable(element));
+//	    w.until(ExpectedConditions.titleContains(title));
+//	     
 	     
 	    driver.findElement(By.id("password")).sendKeys("hghhfghfgh");
 	    
