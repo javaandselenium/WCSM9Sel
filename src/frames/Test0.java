@@ -1,14 +1,12 @@
-package actions;
+package frames;
 
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
 
-public class Test2 {
+public class Test0 {
 
 	public static void main(String[] args) {
 		WebDriver driver=new ChromeDriver();
@@ -16,12 +14,11 @@ public class Test2 {
 		driver.get("https://www.google.com/");
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		
-		WebElement ele = driver.findElement(By.name("q"));
-		
-		Actions a=new Actions(driver);
-		a.contextClick(ele).perform();
+		driver.findElement(By.xpath("//a[@aria-label='Google apps']")).click();
+		driver.switchTo().frame(0);
+		driver.findElement(By.xpath("//span[text()='Calendar']")).click();
 		
 
-	}}
+	}
 
 }
