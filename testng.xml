@@ -3,9 +3,9 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
+      <class name="testng.Testcase1"/>
       <class name="testng.Testcase2"/>
       <class name="testng.Testcase3"/>
-      <class name="testng.Testcase1"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
